@@ -1,6 +1,6 @@
 <?php
 
-namespace FlixTech\SchemaRegistryApi\Constants;
+namespace Jobcloud\SchemaRegistryApi\Constants;
 
 const COMPATIBILITY_NONE = 'NONE';
 const COMPATIBILITY_BACKWARD = 'BACKWARD';

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace FlixTech\SchemaRegistryApi\Test\Schema;
+namespace Jobcloud\SchemaRegistryApi\Test\Schema;
 
-use FlixTech\SchemaRegistryApi\Schema\AvroName;
-use FlixTech\SchemaRegistryApi\Schema\AvroReference;
+use Jobcloud\SchemaRegistryApi\Schema\AvroName;
+use Jobcloud\SchemaRegistryApi\Schema\AvroReference;
 use Generator;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;

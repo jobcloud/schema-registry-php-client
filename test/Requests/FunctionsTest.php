@@ -2,44 +2,44 @@
 
 declare(strict_types=1);
 
-namespace FlixTech\SchemaRegistryApi\Test\Requests;
+namespace Jobcloud\SchemaRegistryApi\Test\Requests;
 
-use FlixTech\SchemaRegistryApi\Schema\AvroName;
-use FlixTech\SchemaRegistryApi\Schema\AvroReference;
+use Jobcloud\SchemaRegistryApi\Schema\AvroName;
+use Jobcloud\SchemaRegistryApi\Schema\AvroReference;
 use Generator;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
-use const FlixTech\SchemaRegistryApi\Constants\ACCEPT_HEADER;
-use const FlixTech\SchemaRegistryApi\Constants\ACCEPT_HEADER_KEY;
-use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_BACKWARD;
-use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_BACKWARD_TRANSITIVE;
-use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_FORWARD;
-use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_FORWARD_TRANSITIVE;
-use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_FULL;
-use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_FULL_TRANSITIVE;
-use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_NONE;
-use const FlixTech\SchemaRegistryApi\Constants\CONTENT_TYPE_HEADER;
-use const FlixTech\SchemaRegistryApi\Constants\CONTENT_TYPE_HEADER_KEY;
-use const FlixTech\SchemaRegistryApi\Constants\VERSION_LATEST;
-use function FlixTech\SchemaRegistryApi\Requests\allSubjectsRequest;
-use function FlixTech\SchemaRegistryApi\Requests\allSubjectVersionsRequest;
-use function FlixTech\SchemaRegistryApi\Requests\changeDefaultCompatibilityLevelRequest;
-use function FlixTech\SchemaRegistryApi\Requests\changeSubjectCompatibilityLevelRequest;
-use function FlixTech\SchemaRegistryApi\Requests\checkIfSubjectHasSchemaRegisteredRequest;
-use function FlixTech\SchemaRegistryApi\Requests\checkSchemaCompatibilityAgainstVersionRequest;
-use function FlixTech\SchemaRegistryApi\Requests\defaultCompatibilityLevelRequest;
-use function FlixTech\SchemaRegistryApi\Requests\deleteSubjectRequest;
-use function FlixTech\SchemaRegistryApi\Requests\deleteSubjectVersionRequest;
-use function FlixTech\SchemaRegistryApi\Requests\prepareCompatibilityLevelForTransport;
-use function FlixTech\SchemaRegistryApi\Requests\prepareJsonSchemaForTransfer;
-use function FlixTech\SchemaRegistryApi\Requests\registerNewSchemaVersionWithSubjectRequest;
-use function FlixTech\SchemaRegistryApi\Requests\schemaRequest;
-use function FlixTech\SchemaRegistryApi\Requests\singleSubjectVersionRequest;
-use function FlixTech\SchemaRegistryApi\Requests\subjectCompatibilityLevelRequest;
-use function FlixTech\SchemaRegistryApi\Requests\validateCompatibilityLevel;
-use function FlixTech\SchemaRegistryApi\Requests\validateSchemaId;
-use function FlixTech\SchemaRegistryApi\Requests\validateSchemaStringAsJson;
-use function FlixTech\SchemaRegistryApi\Requests\validateVersionId;
+use const Jobcloud\SchemaRegistryApi\Constants\ACCEPT_HEADER;
+use const Jobcloud\SchemaRegistryApi\Constants\ACCEPT_HEADER_KEY;
+use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_BACKWARD;
+use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_BACKWARD_TRANSITIVE;
+use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_FORWARD;
+use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_FORWARD_TRANSITIVE;
+use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_FULL;
+use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_FULL_TRANSITIVE;
+use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_NONE;
+use const Jobcloud\SchemaRegistryApi\Constants\CONTENT_TYPE_HEADER;
+use const Jobcloud\SchemaRegistryApi\Constants\CONTENT_TYPE_HEADER_KEY;
+use const Jobcloud\SchemaRegistryApi\Constants\VERSION_LATEST;
+use function Jobcloud\SchemaRegistryApi\Requests\allSubjectsRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\allSubjectVersionsRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\changeDefaultCompatibilityLevelRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\changeSubjectCompatibilityLevelRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\checkIfSubjectHasSchemaRegisteredRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\checkSchemaCompatibilityAgainstVersionRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\defaultCompatibilityLevelRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\deleteSubjectRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\deleteSubjectVersionRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\prepareCompatibilityLevelForTransport;
+use function Jobcloud\SchemaRegistryApi\Requests\prepareJsonSchemaForTransfer;
+use function Jobcloud\SchemaRegistryApi\Requests\registerNewSchemaVersionWithSubjectRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\schemaRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\singleSubjectVersionRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\subjectCompatibilityLevelRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\validateCompatibilityLevel;
+use function Jobcloud\SchemaRegistryApi\Requests\validateSchemaId;
+use function Jobcloud\SchemaRegistryApi\Requests\validateSchemaStringAsJson;
+use function Jobcloud\SchemaRegistryApi\Requests\validateVersionId;
 
 class FunctionsTest extends TestCase
 {

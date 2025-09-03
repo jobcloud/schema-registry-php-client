@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace FlixTech\SchemaRegistryApi\Test\Registry;
+namespace Jobcloud\SchemaRegistryApi\Test\Registry;
 
 use AvroSchema;
 use AvroSchemaParseException;
 use Exception;
-use FlixTech\SchemaRegistryApi\Exception\SchemaNotFoundException;
-use FlixTech\SchemaRegistryApi\Exception\SchemaRegistryException;
-use FlixTech\SchemaRegistryApi\Registry\PromisingRegistry;
+use Jobcloud\SchemaRegistryApi\Exception\SchemaNotFoundException;
+use Jobcloud\SchemaRegistryApi\Exception\SchemaRegistryException;
+use Jobcloud\SchemaRegistryApi\Registry\PromisingRegistry;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
@@ -18,13 +18,13 @@ use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use const FlixTech\SchemaRegistryApi\Constants\VERSION_LATEST;
-use function FlixTech\SchemaRegistryApi\Requests\checkIfSubjectHasSchemaRegisteredRequest;
-use function FlixTech\SchemaRegistryApi\Requests\registerNewSchemaVersionWithSubjectRequest;
-use function FlixTech\SchemaRegistryApi\Requests\schemaRequest;
-use function FlixTech\SchemaRegistryApi\Requests\singleSubjectVersionRequest;
-use function FlixTech\SchemaRegistryApi\Requests\validateSchemaId;
-use function FlixTech\SchemaRegistryApi\Requests\validateVersionId;
+use const Jobcloud\SchemaRegistryApi\Constants\VERSION_LATEST;
+use function Jobcloud\SchemaRegistryApi\Requests\checkIfSubjectHasSchemaRegisteredRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\registerNewSchemaVersionWithSubjectRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\schemaRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\singleSubjectVersionRequest;
+use function Jobcloud\SchemaRegistryApi\Requests\validateSchemaId;
+use function Jobcloud\SchemaRegistryApi\Requests\validateVersionId;
 
 class PromisingRegistryTest extends TestCase
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FlixTech\SchemaRegistryApi\Exception;
+namespace Jobcloud\SchemaRegistryApi\Exception;
 
 use Throwable;
 

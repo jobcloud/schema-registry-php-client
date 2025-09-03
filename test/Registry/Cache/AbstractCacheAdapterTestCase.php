@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace FlixTech\SchemaRegistryApi\Test\Registry\Cache;
+namespace Jobcloud\SchemaRegistryApi\Test\Registry\Cache;
 
 use AvroSchema;
 use AvroSchemaParseException;
-use FlixTech\SchemaRegistryApi\Registry\CacheAdapter;
+use Jobcloud\SchemaRegistryApi\Registry\CacheAdapter;
 use PHPUnit\Framework\TestCase;
 
 abstract class AbstractCacheAdapterTestCase extends TestCase

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace FlixTech\SchemaRegistryApi;
+namespace Jobcloud\SchemaRegistryApi;
 
 use AvroSchema;
-use FlixTech\SchemaRegistryApi\Exception\SchemaRegistryException;
-use FlixTech\SchemaRegistryApi\Schema\AvroReference;
+use Jobcloud\SchemaRegistryApi\Exception\SchemaRegistryException;
+use Jobcloud\SchemaRegistryApi\Schema\AvroReference;
 
 /**
  * Client that talk to a schema registry over http

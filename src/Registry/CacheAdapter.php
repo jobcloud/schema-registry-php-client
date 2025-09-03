@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FlixTech\SchemaRegistryApi\Registry;
+namespace Jobcloud\SchemaRegistryApi\Registry;
 
 use AvroSchema;
 

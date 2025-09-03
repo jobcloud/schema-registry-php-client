@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace FlixTech\SchemaRegistryApi\Test\Registry;
+namespace Jobcloud\SchemaRegistryApi\Test\Registry;
 
 use AvroSchema;
 use AvroSchemaParseException;
-use FlixTech\SchemaRegistryApi\Exception\SchemaRegistryException;
-use FlixTech\SchemaRegistryApi\Exception\SubjectNotFoundException;
-use FlixTech\SchemaRegistryApi\Registry;
-use FlixTech\SchemaRegistryApi\Registry\CacheAdapter;
-use FlixTech\SchemaRegistryApi\Registry\CachedRegistry;
+use Jobcloud\SchemaRegistryApi\Exception\SchemaRegistryException;
+use Jobcloud\SchemaRegistryApi\Exception\SubjectNotFoundException;
+use Jobcloud\SchemaRegistryApi\Registry;
+use Jobcloud\SchemaRegistryApi\Registry\CacheAdapter;
+use Jobcloud\SchemaRegistryApi\Registry\CachedRegistry;
 use GuzzleHttp\Promise\FulfilledPromise;
 use GuzzleHttp\Promise\PromiseInterface;
 use PHPUnit\Framework\MockObject\MockObject;

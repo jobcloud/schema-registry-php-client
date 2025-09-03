@@ -1,5 +1,5 @@
 {
-  "name": "flix-tech/confluent-schema-registry-api",
+  "name": "jobcloud/confluent-schema-registry-api",
   "description": "A PHP 7.4+ library to consume the Confluent Schema Registry REST API.",
   "minimum-stability": "stable",
   "type": "library",
@@ -35,7 +35,7 @@
   },
   "autoload": {
     "psr-4": {
-      "FlixTech\\SchemaRegistryApi\\": "src/"
+      "Jobcloud\\SchemaRegistryApi\\": "src/"
     },
     "files": [
       "src/Requests/Functions.php",
@@ -44,7 +44,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "FlixTech\\SchemaRegistryApi\\Test\\": "test/"
+      "Jobcloud\\SchemaRegistryApi\\Test\\": "test/"
     }
   }
 }
