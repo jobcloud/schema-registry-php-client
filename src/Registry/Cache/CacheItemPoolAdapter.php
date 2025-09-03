@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Registry\Cache;
+namespace FlixTech\SchemaRegistryApi\Registry\Cache;
 
 use AvroSchema;
 use AvroSchemaParseException;
-use Jobcloud\SchemaRegistryApi\Registry\CacheAdapter;
+use FlixTech\SchemaRegistryApi\Registry\CacheAdapter;
 use Psr\Cache\CacheItemPoolInterface;
 use Symfony\Component\Cache\Exception\InvalidArgumentException;
 

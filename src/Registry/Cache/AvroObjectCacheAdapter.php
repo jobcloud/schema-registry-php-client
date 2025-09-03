@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Registry\Cache;
+namespace FlixTech\SchemaRegistryApi\Registry\Cache;
 
 use AvroSchema;
-use Jobcloud\SchemaRegistryApi\Registry\CacheAdapter;
+use FlixTech\SchemaRegistryApi\Registry\CacheAdapter;
 
 /**
  * {@inheritdoc}

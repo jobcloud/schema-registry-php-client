@@ -1,21 +1,21 @@
 <?php
 
-namespace Jobcloud\SchemaRegistryApi\Requests;
+namespace FlixTech\SchemaRegistryApi\Requests;
 
 use Assert\Assert;
-use Jobcloud\SchemaRegistryApi\Schema\AvroReference;
+use FlixTech\SchemaRegistryApi\Schema\AvroReference;
 use GuzzleHttp\Psr7\Request;
 use Psr\Http\Message\RequestInterface;
-use const Jobcloud\SchemaRegistryApi\Constants\ACCEPT_HEADER;
-use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_BACKWARD;
-use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_BACKWARD_TRANSITIVE;
-use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_FORWARD;
-use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_FORWARD_TRANSITIVE;
-use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_FULL;
-use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_FULL_TRANSITIVE;
-use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_NONE;
-use const Jobcloud\SchemaRegistryApi\Constants\CONTENT_TYPE_HEADER;
-use const Jobcloud\SchemaRegistryApi\Constants\VERSION_LATEST;
+use const FlixTech\SchemaRegistryApi\Constants\ACCEPT_HEADER;
+use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_BACKWARD;
+use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_BACKWARD_TRANSITIVE;
+use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_FORWARD;
+use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_FORWARD_TRANSITIVE;
+use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_FULL;
+use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_FULL_TRANSITIVE;
+use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_NONE;
+use const FlixTech\SchemaRegistryApi\Constants\CONTENT_TYPE_HEADER;
+use const FlixTech\SchemaRegistryApi\Constants\VERSION_LATEST;
 use function implode;
 
 function allSubjectsRequest(): RequestInterface

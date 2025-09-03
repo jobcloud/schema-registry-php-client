@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Test\Exception;
+namespace FlixTech\SchemaRegistryApi\Test\Exception;
 
-use Jobcloud\SchemaRegistryApi\Exception\AbstractSchemaRegistryException;
-use Jobcloud\SchemaRegistryApi\Exception\BackendDataStoreException;
-use Jobcloud\SchemaRegistryApi\Exception\ExceptionMap;
-use Jobcloud\SchemaRegistryApi\Exception\IncompatibleAvroSchemaException;
-use Jobcloud\SchemaRegistryApi\Exception\InvalidAvroSchemaException;
-use Jobcloud\SchemaRegistryApi\Exception\InvalidCompatibilityLevelException;
-use Jobcloud\SchemaRegistryApi\Exception\InvalidVersionException;
-use Jobcloud\SchemaRegistryApi\Exception\MasterProxyException;
-use Jobcloud\SchemaRegistryApi\Exception\OperationTimedOutException;
-use Jobcloud\SchemaRegistryApi\Exception\SchemaNotFoundException;
-use Jobcloud\SchemaRegistryApi\Exception\SchemaRegistryException;
-use Jobcloud\SchemaRegistryApi\Exception\SubjectNotFoundException;
-use Jobcloud\SchemaRegistryApi\Exception\VersionNotFoundException;
+use FlixTech\SchemaRegistryApi\Exception\AbstractSchemaRegistryException;
+use FlixTech\SchemaRegistryApi\Exception\BackendDataStoreException;
+use FlixTech\SchemaRegistryApi\Exception\ExceptionMap;
+use FlixTech\SchemaRegistryApi\Exception\IncompatibleAvroSchemaException;
+use FlixTech\SchemaRegistryApi\Exception\InvalidAvroSchemaException;
+use FlixTech\SchemaRegistryApi\Exception\InvalidCompatibilityLevelException;
+use FlixTech\SchemaRegistryApi\Exception\InvalidVersionException;
+use FlixTech\SchemaRegistryApi\Exception\MasterProxyException;
+use FlixTech\SchemaRegistryApi\Exception\OperationTimedOutException;
+use FlixTech\SchemaRegistryApi\Exception\SchemaNotFoundException;
+use FlixTech\SchemaRegistryApi\Exception\SchemaRegistryException;
+use FlixTech\SchemaRegistryApi\Exception\SubjectNotFoundException;
+use FlixTech\SchemaRegistryApi\Exception\VersionNotFoundException;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;

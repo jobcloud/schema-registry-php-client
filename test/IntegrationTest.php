@@ -2,35 +2,35 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Test;
+namespace FlixTech\SchemaRegistryApi\Test;
 
-use Jobcloud\SchemaRegistryApi\Exception\ExceptionMap;
-use Jobcloud\SchemaRegistryApi\Exception\IncompatibleAvroSchemaException;
-use Jobcloud\SchemaRegistryApi\Exception\InvalidAvroSchemaException;
-use Jobcloud\SchemaRegistryApi\Exception\InvalidVersionException;
-use Jobcloud\SchemaRegistryApi\Exception\SchemaNotFoundException;
-use Jobcloud\SchemaRegistryApi\Exception\SubjectNotFoundException;
-use Jobcloud\SchemaRegistryApi\Exception\VersionNotFoundException;
+use FlixTech\SchemaRegistryApi\Exception\ExceptionMap;
+use FlixTech\SchemaRegistryApi\Exception\IncompatibleAvroSchemaException;
+use FlixTech\SchemaRegistryApi\Exception\InvalidAvroSchemaException;
+use FlixTech\SchemaRegistryApi\Exception\InvalidVersionException;
+use FlixTech\SchemaRegistryApi\Exception\SchemaNotFoundException;
+use FlixTech\SchemaRegistryApi\Exception\SubjectNotFoundException;
+use FlixTech\SchemaRegistryApi\Exception\VersionNotFoundException;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Message\ResponseInterface;
-use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_BACKWARD;
-use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_FORWARD;
-use const Jobcloud\SchemaRegistryApi\Constants\COMPATIBILITY_FULL;
-use const Jobcloud\SchemaRegistryApi\Constants\VERSION_LATEST;
-use function Jobcloud\SchemaRegistryApi\Requests\allSubjectsRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\allSubjectVersionsRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\changeDefaultCompatibilityLevelRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\changeSubjectCompatibilityLevelRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\checkIfSubjectHasSchemaRegisteredRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\checkSchemaCompatibilityAgainstVersionRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\defaultCompatibilityLevelRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\registerNewSchemaVersionWithSubjectRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\schemaRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\singleSubjectVersionRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\subjectCompatibilityLevelRequest;
+use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_BACKWARD;
+use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_FORWARD;
+use const FlixTech\SchemaRegistryApi\Constants\COMPATIBILITY_FULL;
+use const FlixTech\SchemaRegistryApi\Constants\VERSION_LATEST;
+use function FlixTech\SchemaRegistryApi\Requests\allSubjectsRequest;
+use function FlixTech\SchemaRegistryApi\Requests\allSubjectVersionsRequest;
+use function FlixTech\SchemaRegistryApi\Requests\changeDefaultCompatibilityLevelRequest;
+use function FlixTech\SchemaRegistryApi\Requests\changeSubjectCompatibilityLevelRequest;
+use function FlixTech\SchemaRegistryApi\Requests\checkIfSubjectHasSchemaRegisteredRequest;
+use function FlixTech\SchemaRegistryApi\Requests\checkSchemaCompatibilityAgainstVersionRequest;
+use function FlixTech\SchemaRegistryApi\Requests\defaultCompatibilityLevelRequest;
+use function FlixTech\SchemaRegistryApi\Requests\registerNewSchemaVersionWithSubjectRequest;
+use function FlixTech\SchemaRegistryApi\Requests\schemaRequest;
+use function FlixTech\SchemaRegistryApi\Requests\singleSubjectVersionRequest;
+use function FlixTech\SchemaRegistryApi\Requests\subjectCompatibilityLevelRequest;
 
 /**
  * @group integration

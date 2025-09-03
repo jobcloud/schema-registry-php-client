@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Registry;
+namespace FlixTech\SchemaRegistryApi\Registry;
 
 use AvroSchema;
 use Closure;
-use Jobcloud\SchemaRegistryApi\AsynchronousRegistry;
-use Jobcloud\SchemaRegistryApi\Exception\ExceptionMap;
-use Jobcloud\SchemaRegistryApi\Schema\AvroReference;
+use FlixTech\SchemaRegistryApi\AsynchronousRegistry;
+use FlixTech\SchemaRegistryApi\Exception\ExceptionMap;
+use FlixTech\SchemaRegistryApi\Schema\AvroReference;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Promise\PromiseInterface;
@@ -16,13 +16,13 @@ use InvalidArgumentException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use RuntimeException;
-use const Jobcloud\SchemaRegistryApi\Constants\VERSION_LATEST;
-use function Jobcloud\SchemaRegistryApi\Requests\checkIfSubjectHasSchemaRegisteredRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\registerNewSchemaVersionWithSubjectRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\schemaRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\singleSubjectVersionRequest;
-use function Jobcloud\SchemaRegistryApi\Requests\validateSchemaId;
-use function Jobcloud\SchemaRegistryApi\Requests\validateVersionId;
+use const FlixTech\SchemaRegistryApi\Constants\VERSION_LATEST;
+use function FlixTech\SchemaRegistryApi\Requests\checkIfSubjectHasSchemaRegisteredRequest;
+use function FlixTech\SchemaRegistryApi\Requests\registerNewSchemaVersionWithSubjectRequest;
+use function FlixTech\SchemaRegistryApi\Requests\schemaRequest;
+use function FlixTech\SchemaRegistryApi\Requests\singleSubjectVersionRequest;
+use function FlixTech\SchemaRegistryApi\Requests\validateSchemaId;
+use function FlixTech\SchemaRegistryApi\Requests\validateVersionId;
 use function sprintf;
 
 /**

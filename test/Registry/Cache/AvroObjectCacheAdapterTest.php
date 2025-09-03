@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Test\Registry\Cache;
+namespace FlixTech\SchemaRegistryApi\Test\Registry\Cache;
 
-use Jobcloud\SchemaRegistryApi\Registry\Cache\AvroObjectCacheAdapter;
-use Jobcloud\SchemaRegistryApi\Registry\CacheAdapter;
+use FlixTech\SchemaRegistryApi\Registry\Cache\AvroObjectCacheAdapter;
+use FlixTech\SchemaRegistryApi\Registry\CacheAdapter;
 
 class AvroObjectCacheAdapterTest extends AbstractCacheAdapterTestCase
 {

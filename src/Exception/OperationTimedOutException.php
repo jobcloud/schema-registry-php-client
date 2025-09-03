@@ -1,6 +1,6 @@
 <?php
 
-namespace Jobcloud\SchemaRegistryApi\Exception;
+namespace FlixTech\SchemaRegistryApi\Exception;
 
 class OperationTimedOutException extends AbstractSchemaRegistryException
 {

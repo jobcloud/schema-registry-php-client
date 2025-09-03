@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi;
+namespace FlixTech\SchemaRegistryApi;
 
 use AvroSchema;
-use Jobcloud\SchemaRegistryApi\Schema\AvroReference;
+use FlixTech\SchemaRegistryApi\Schema\AvroReference;
 
 /**
  * {@inheritdoc}

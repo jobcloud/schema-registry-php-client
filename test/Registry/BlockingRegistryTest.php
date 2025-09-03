@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Test\Registry;
+namespace FlixTech\SchemaRegistryApi\Test\Registry;
 
 use AvroSchema;
 use AvroSchemaParseException;
-use Jobcloud\SchemaRegistryApi\AsynchronousRegistry;
-use Jobcloud\SchemaRegistryApi\Exception\SchemaRegistryException;
-use Jobcloud\SchemaRegistryApi\Registry\BlockingRegistry;
-use Jobcloud\SchemaRegistryApi\SynchronousRegistry;
+use FlixTech\SchemaRegistryApi\AsynchronousRegistry;
+use FlixTech\SchemaRegistryApi\Exception\SchemaRegistryException;
+use FlixTech\SchemaRegistryApi\Registry\BlockingRegistry;
+use FlixTech\SchemaRegistryApi\SynchronousRegistry;
 use GuzzleHttp\Promise\FulfilledPromise;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Test\Registry\Cache;
+namespace FlixTech\SchemaRegistryApi\Test\Registry\Cache;
 
 use Doctrine\Common\Cache\ArrayCache;
-use Jobcloud\SchemaRegistryApi\Registry\Cache\DoctrineCacheAdapter;
-use Jobcloud\SchemaRegistryApi\Registry\CacheAdapter;
+use FlixTech\SchemaRegistryApi\Registry\Cache\DoctrineCacheAdapter;
+use FlixTech\SchemaRegistryApi\Registry\CacheAdapter;
 
 class DoctrineCacheAdapterTest extends AbstractCacheAdapterTestCase
 {

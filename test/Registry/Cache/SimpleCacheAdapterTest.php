@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Test\Registry\Cache;
+namespace FlixTech\SchemaRegistryApi\Test\Registry\Cache;
 
-use Jobcloud\SchemaRegistryApi\Registry\Cache\SimpleCacheAdapter;
-use Jobcloud\SchemaRegistryApi\Registry\CacheAdapter;
+use FlixTech\SchemaRegistryApi\Registry\Cache\SimpleCacheAdapter;
+use FlixTech\SchemaRegistryApi\Registry\CacheAdapter;
 use Symfony\Component\Cache\Adapter\ArrayAdapter;
 use Symfony\Component\Cache\Psr16Cache;
 

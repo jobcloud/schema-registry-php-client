@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Registry;
+namespace FlixTech\SchemaRegistryApi\Registry;
 
 use AvroSchema;
 use Exception;
-use Jobcloud\SchemaRegistryApi\AsynchronousRegistry;
-use Jobcloud\SchemaRegistryApi\Schema\AvroReference;
-use Jobcloud\SchemaRegistryApi\SynchronousRegistry;
+use FlixTech\SchemaRegistryApi\AsynchronousRegistry;
+use FlixTech\SchemaRegistryApi\Schema\AvroReference;
+use FlixTech\SchemaRegistryApi\SynchronousRegistry;
 use GuzzleHttp\Promise\PromiseInterface;
 use LogicException;
 

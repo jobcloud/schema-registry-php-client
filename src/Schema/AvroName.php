@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Schema;
+namespace FlixTech\SchemaRegistryApi\Schema;
 
 use Assert\Assertion;
 

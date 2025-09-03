@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Jobcloud\SchemaRegistryApi\Exception;
+namespace FlixTech\SchemaRegistryApi\Exception;
 
 class InvalidAvroSchemaException extends AbstractSchemaRegistryException
 {
